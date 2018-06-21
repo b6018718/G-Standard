@@ -125,7 +125,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Fonts.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Music.cpp" />
     <ClCompile Include="Source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Fonts.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Music.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
