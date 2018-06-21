@@ -76,11 +76,11 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\antho\OneDrive\My Documents\GitHub\G-Standard\G Standard\G Standard\SDL2-2.0.8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\antho\OneDrive\My Documents\GitHub\G-Standard\G Standard\G Standard\SDL2_ttf-2.0.14\include;C:\Users\antho\OneDrive\My Documents\GitHub\G-Standard\G Standard\G Standard\SDL2_mixer-2.0.2\include;C:\Users\antho\OneDrive\My Documents\GitHub\G-Standard\G Standard\G Standard\SDL2_image-2.0.3\include;C:\Users\antho\OneDrive\My Documents\GitHub\G-Standard\G Standard\G Standard\SDL2-2.0.8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>C:\Users\antho\OneDrive\My Documents\GitHub\G-Standard\G Standard\G Standard\SDL2-2.0.8\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\antho\OneDrive\My Documents\GitHub\G-Standard\G Standard\G Standard\SDL2_ttf-2.0.14\lib\x86;C:\Users\antho\OneDrive\My Documents\GitHub\G-Standard\G Standard\G Standard\SDL2_mixer-2.0.2\lib\x86;C:\Users\antho\OneDrive\My Documents\GitHub\G-Standard\G Standard\G Standard\SDL2_image-2.0.3\lib\x86;C:\Users\antho\OneDrive\My Documents\GitHub\G-Standard\G Standard\G Standard\SDL2-2.0.8\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
@@ -100,13 +100,13 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\antho\OneDrive\My Documents\GitHub\G-Standard\G Standard\G Standard\SDL2-2.0.8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\antho\OneDrive\My Documents\GitHub\G-Standard\G Standard\G Standard\SDL2_ttf-2.0.14\include;C:\Users\antho\OneDrive\My Documents\GitHub\G-Standard\G Standard\G Standard\SDL2_mixer-2.0.2\include;C:\Users\antho\OneDrive\My Documents\GitHub\G-Standard\G Standard\G Standard\SDL2_image-2.0.3\include;C:\Users\antho\OneDrive\My Documents\GitHub\G-Standard\G Standard\G Standard\SDL2-2.0.8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>C:\Users\antho\OneDrive\My Documents\GitHub\G-Standard\G Standard\G Standard\SDL2-2.0.8\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\antho\OneDrive\My Documents\GitHub\G-Standard\G Standard\G Standard\SDL2_ttf-2.0.14\lib\x86;C:\Users\antho\OneDrive\My Documents\GitHub\G-Standard\G Standard\G Standard\SDL2_mixer-2.0.2\lib\x86;C:\Users\antho\OneDrive\My Documents\GitHub\G-Standard\G Standard\G Standard\SDL2_image-2.0.3\lib\x86;C:\Users\antho\OneDrive\My Documents\GitHub\G-Standard\G Standard\G Standard\SDL2-2.0.8\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>

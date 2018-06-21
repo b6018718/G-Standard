@@ -8,6 +8,10 @@
 #include <math.h>
 #include <vector>
 #include <SDL.h>
+#include "sdl_mixer.h"
+#include "SDL_TTF.h"
+#include "SDL_image.h"
+#include "SDL_gamecontroller.h"
 
 //Count Lines OF Code = ctrl + shift + f
 //^(?!(\s*\*))(?!(\s*\-\-\>))(?!(\s*\<\!\-\-))(?!(\s*\n))(?!(\s*\*\/))(?!(\s*\/\*))(?!(\s*\/\/\/))(?!(\s*\/\/))(?!(\s*\}))(?!(\s*\{))(?!(\s(using))).*$
@@ -23,7 +27,7 @@ int main(int argc, char* args[])
 	{
 		cout << "SDL initialization succeeded!";
 	}
-
+	
 	cin.get();
 	return 0;
 }
