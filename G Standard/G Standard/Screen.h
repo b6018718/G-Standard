@@ -2,14 +2,13 @@
 #include <SDL.h>
 #include "SDL_image.h"
 #include <iostream>
+#include <sstream>
 #include <list>
 #include <algorithm>
+#include <string>
+#include <map>
 
-struct FormattedTexture
-{
-	std::shared_ptr <SDL_Texture> textureData;
-	std::string fileName;
-};
+using namespace std;
 
 class Screen
 {
@@ -17,20 +16,39 @@ public:
 	Screen();
 	~Screen();
 
-	void loadMedia(std::weak_ptr <SDL_Texture>& loadTexture, std::string filename);
-	std::weak_ptr <SDL_Texture> newTexture(std::string filename);
+	void handleEvent(SDL_Event& e);
+	void toggleFullScreen();
+
 	void closeWindow();
-	void deleteTexture(std::weak_ptr <SDL_Texture>& textureToDelete);
+	map<string, SDL_Texture*>::iterator deleteTexture(string filename);
+	void deleteAllTextures();
 
 	void clear();
-	void blit(std::weak_ptr <SDL_Texture> weakBlitTexture, int sourceX, int sourceY, int sourceW, int sourceH, int destinationX, int destinationY);
-	void blit(std::weak_ptr <SDL_Texture> weakBlitTexture, int destinationX, int destinationY);
+	void blit(string filename, int sourceX, int sourceY, int sourceW, int sourceH, int destinationX, int destinationY);
+	void blit(string filename, int destinationX, int destinationY);
 	void update();
 
+	int getWidth();
+	int getHeight();
+	
+	bool hasMouseFocus();
+	bool hasKeyBoardFocus();
+	bool isMinimised();
+
 private:
-	std::weak_ptr <SDL_Texture> generateTexture(std::string filename);
 	SDL_Window * window;
-	std::list <FormattedTexture> textureList;
+	map<string, SDL_Texture*> textures;
 	SDL_Renderer * renderer;
+
+	string windowName;
+	bool debugMode;
+
+	int windowHeight;
+	int windowWidth;
+
+	bool mouseFocus;
+	bool keyboardFocus;
+	bool fullScreen;
+	bool minimised;
 };
 

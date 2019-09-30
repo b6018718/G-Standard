@@ -28,16 +28,24 @@ void Game::GameLoop()
 	//While application is running
 	bool quit(false);
 	SDL_Event gameEvent;
-	while (!quit)
-	{
+	screen.clear();
+	while (!quit){
 		//Handle events on queue
-		while (SDL_PollEvent(&gameEvent) != 0)
-		{
+		while (SDL_PollEvent(&gameEvent) != 0){
 			//User requests quit
-			if (gameEvent.type == SDL_QUIT)
-			{
+			if (gameEvent.type == SDL_QUIT){
 				quit = true;
 			}
+			// Example: How to use graphics
+			if (!loaded) {
+				screen.blit(graphics.waddleDee, 100, 100);
+				loaded = true;
+			}
+			// Check for screen resizing events
+			screen.handleEvent(gameEvent);
+			// Display the screen
+			screen.update();
+
 		}
 	}
 }
